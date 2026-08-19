@@ -22,7 +22,7 @@
     "k6:mixed": "sh -c 'K6_BIN=${K6_BIN:-k6}; command -v \"$K6_BIN\" >/dev/null 2>&1 || { echo \"k6 is required. Install it or set K6_BIN=/absolute/path/to/k6.\"; exit 1; }; \"$K6_BIN\" run ./load-tests/mixed.js'"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.600.0",
+    "@aws-sdk/client-s3": "^3.1111.0",
     "@sendgrid/mail": "^8.1.6",
     "@sentry/node": "^10.45.0",
     "@socket.io/redis-adapter": "^8.3.0",
