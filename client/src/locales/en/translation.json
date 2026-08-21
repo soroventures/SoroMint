@@ -39,5 +39,33 @@
     "refresh": "Refresh Page",
     "tryAgain": "Try Again",
     "help": "If this problem persists, please contact support."
+  },
+  "auditLog": {
+    "pageTitle": "ZK Audit Log",
+    "pageSubtitle": "Verified deployment event trail with zero-knowledge integrity",
+    "zkBadge": "ZK Audit Trail",
+    "refreshButton": "Refresh",
+    "demoMode": "Running in demo mode — using mock data",
+    "demoHint": "Running in demo mode — backend API not connected. Showing mock data.",
+    "fetchError": "Failed to load audit logs",
+    "noLogs": "No audit logs found",
+    "exportCsv": "Export CSV",
+    "exported": "Audit log exported as CSV",
+    "from": "From",
+    "to": "To",
+    "status": "Status",
+    "all": "All",
+    "success": "Success",
+    "fail": "Fail",
+    "tokenName": "Token Name",
+    "contractId": "Contract ID",
+    "error": "Error",
+    "date": "Date",
+    "metrics": {
+      "total": "Total Events",
+      "successful": "Successful",
+      "failed": "Failed",
+      "rate": "Success Rate"
+    }
   }
 }
