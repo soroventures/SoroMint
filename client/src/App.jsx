@@ -12,6 +12,7 @@ import {
   LayoutDashboard,
   BookOpenText,
   Vote,
+  ShieldCheck,
 } from "lucide-react";
 
 // UI Components & Stores
@@ -23,6 +24,7 @@ import ThemeToggle from "./components/ThemeToggle";
 
 const DeveloperHub = lazy(() => import("./components/developer-hub"));
 const VotingDashboard = lazy(() => import("./components/VotingDashboard"));
+const BackstopDashboard = lazy(() => import("./pages/Backstop/Backstop"));
 
 const API_BASE = "http://localhost:5000/api";
 
@@ -30,6 +32,7 @@ const views = [
   { id: "dashboard", label: "Dashboard", icon: LayoutDashboard },
   { id: "governance", label: "Governance", icon: Vote },
   { id: "developer-hub", label: "Developer Hub", icon: BookOpenText },
+  { id: "backstop", label: "Backstop", icon: ShieldCheck },
 ];
 
 /**
@@ -363,6 +366,32 @@ function App() {
           }
         >
           <DeveloperHub />
+        </Suspense>
+      ) : activeView === "backstop" ? (
+        <Suspense
+          fallback={
+            <div className="glass-card flex min-h-[320px] items-center justify-center">
+              <div className="space-y-3 text-center">
+                <p className="text-sm uppercase tracking-[0.3em] text-emerald-500">
+                  Backstop
+                </p>
+                <p className="text-lg font-medium dark:text-white">
+                  Loading insurance fund status…
+                </p>
+              </div>
+            </div>
+          }
+        >
+          <ErrorBoundary
+            fallbackRender={({ resetErrorBoundary }) => (
+              <SectionCrashCard
+                title="Backstop Unavailable"
+                onRetry={resetErrorBoundary}
+              />
+            )}
+          >
+            <BackstopDashboard />
+          </ErrorBoundary>
         </Suspense>
       ) : (
         <main className="grid grid-cols-1 gap-8 lg:grid-cols-3">

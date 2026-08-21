@@ -6,6 +6,12 @@
     "walletConnected": "Wallet connected successfully",
     "footer": "SoroMint Platform. Built on Soroban."
   },
+  "nav": {
+    "dashboard": "Dashboard",
+    "governance": "Governance",
+    "developer-hub": "Developer Hub",
+    "backstop": "Backstop"
+  },
   "mint": {
     "title": "Mint New Token",
     "tokenName": "Token Name",
@@ -27,6 +33,34 @@
     "symbol": "Symbol",
     "contractId": "Contract ID",
     "decimals": "Decimals"
+  },
+  "backstop": {
+    "pageTitle": "Backstop",
+    "pageSubtitle": "Protocol insurance fund — reserve for exploit & shortfall coverage",
+    "live": "Live",
+    "contractVersion": "Contract v{{version}}",
+    "contractConfig": "Contract Configuration",
+    "contractConfigHint": "Admin can withdraw funds for coverage and update the fee rate.",
+    "admin": "Admin",
+    "token": "Reserve Token",
+    "feeBps": "Fee (bps)",
+    "copy": "Copy to clipboard",
+    "metrics": {
+      "balance": "Reserve Balance",
+      "totalDeposited": "Total Deposited",
+      "totalWithdrawn": "Total Withdrawn",
+      "feeRate": "Fee Rate"
+    },
+    "feeCalculator": "Fee Calculator",
+    "feeCalculatorHint": "Fee = principal × fee_bps ÷ 10,000, matching calc_fee on-chain.",
+    "principalLabel": "Principal Amount",
+    "feeAmount": "Fee charged",
+    "rate": "Current rate: {{rate}}",
+    "refreshButton": "Refresh",
+    "loading": "Loading…",
+    "loadFailed": "Failed to load backstop status",
+    "demoMode": "Showing demo data — backend not connected.",
+    "opsNote": "Deposits and withdrawals are executed through the Soroban contract by the protocol or the admin wallet and will appear here automatically after the transaction settles."
   },
   "language": {
     "label": "Language",
