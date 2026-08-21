@@ -12,6 +12,7 @@ import {
   LayoutDashboard,
   BookOpenText,
   Vote,
+  Users,
 } from "lucide-react";
 
 // UI Components & Stores
@@ -23,6 +24,7 @@ import ThemeToggle from "./components/ThemeToggle";
 
 const DeveloperHub = lazy(() => import("./components/developer-hub"));
 const VotingDashboard = lazy(() => import("./components/VotingDashboard"));
+const MultisigDashboard = lazy(() => import("./pages/Multisig/Multisig"));
 
 const API_BASE = "http://localhost:5000/api";
 
@@ -30,6 +32,7 @@ const views = [
   { id: "dashboard", label: "Dashboard", icon: LayoutDashboard },
   { id: "governance", label: "Governance", icon: Vote },
   { id: "developer-hub", label: "Developer Hub", icon: BookOpenText },
+  { id: "multisig", label: "Multisig", icon: Users },
 ];
 
 /**
@@ -363,6 +366,32 @@ function App() {
           }
         >
           <DeveloperHub />
+        </Suspense>
+      ) : activeView === "multisig" ? (
+        <Suspense
+          fallback={
+            <div className="glass-card flex min-h-[320px] items-center justify-center">
+              <div className="space-y-3 text-center">
+                <p className="text-sm uppercase tracking-[0.3em] text-purple-500">
+                  Multisig
+                </p>
+                <p className="text-lg font-medium dark:text-white">
+                  Loading multisig contract…
+                </p>
+              </div>
+            </div>
+          }
+        >
+          <ErrorBoundary
+            fallbackRender={({ resetErrorBoundary }) => (
+              <SectionCrashCard
+                title="Multisig Unavailable"
+                onRetry={resetErrorBoundary}
+              />
+            )}
+          >
+            <MultisigDashboard />
+          </ErrorBoundary>
         </Suspense>
       ) : (
         <main className="grid grid-cols-1 gap-8 lg:grid-cols-3">
