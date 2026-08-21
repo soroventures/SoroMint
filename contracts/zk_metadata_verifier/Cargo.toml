@@ -1,0 +1,18 @@
+[package]
+name = "soromint-zk-metadata-verifier"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Groth16 (BLS12-381) on-chain verifier for decentralized AI metadata validation"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+soroban-sdk = "22.0.0"
+
+[features]
+testutils = ["soroban-sdk/testutils"]
+
+[dev-dependencies]
+soroban-sdk = { version = "22.0.0", features = ["testutils"] }

@@ -1,0 +1,24 @@
+[package]
+name = "soromint-zk-mint-gateway"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "ZK-gated token creation and minting lifecycle for SoroMint"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+soroban-sdk = "22.0.0"
+
+# The verifier is a *dev* dependency on purpose. Linking its rlib into the
+# gateway would pull in its `#[contractimpl]` exports and produce duplicate
+# wasm symbols (`pause`, `unpause`, ...). At runtime the gateway reaches it
+# through the `#[contractclient]` interface in `verifier.rs` instead, which
+# needs no link-time coupling; the tests link it only to register a real
+# instance to call.
+[dev-dependencies]
+soroban-sdk = { version = "22.0.0", features = ["testutils"] }
+soromint-zk-metadata-verifier = { path = "../zk_metadata_verifier", features = [
+    "testutils",
+] }

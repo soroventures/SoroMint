@@ -24,6 +24,8 @@ members = [
     "contracts/vault",
     "contracts/vesting",
     "contracts/wrapper",
+    "contracts/zk_metadata_verifier",
+    "contracts/zk_mint_gateway",
 ]
 
 
