@@ -1,0 +1,42 @@
+﻿cargo : warning: profiles for the non root package will be ignored, specify profiles at the workspace 
+root:
+At line:1 char:1
++ cargo test -p soromint-lending-pool 2>&1 | Out-File test_output.txt - ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: profil...workspace root::String) [], RemoteExcep 
+   tion
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\backstop\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\dividend\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\oracle\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\lottery\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\merkle_whitelist\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\multisig\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\otc_escrow\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\upgradeable\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\vault\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\vesting\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\wrapper\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+   Compiling stellar-xdr v22.1.0

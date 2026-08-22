@@ -10,6 +10,7 @@ members = [
     "contracts/dividend",
     "contracts/factory",
     "contracts/flash_loan",
+    "contracts/lending_pool",
     "contracts/lifecycle",
     "contracts/lottery",
     "contracts/merkle_whitelist",

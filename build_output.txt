@@ -1,0 +1,162 @@
+﻿cargo : warning: profiles for the non root package will be ignored, specify profiles at the workspace 
+root:
+At line:1 char:1
++ cargo build -p soromint-lending-pool 2>&1 | Out-File -FilePath build_ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: profil...workspace root::String) [], RemoteExcep 
+   tion
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\backstop\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\dividend\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\oracle\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\lottery\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\merkle_whitelist\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\multisig\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\otc_escrow\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\upgradeable\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\vault\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\vesting\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\wrapper\Cargo.toml
+workspace: C:\Users\HP-PC\OneDrive\Desktop\SoroMint\Cargo.toml
+   Compiling syn v1.0.109
+   Compiling paste v1.0.15
+   Compiling rand_chacha v0.3.1
+   Compiling serde_with v3.18.0
+   Compiling num-integer v0.1.46
+   Compiling rand v0.8.6
+   Compiling num-bigint v0.4.6
+   Compiling stellar-xdr v22.1.0
+   Compiling ff v0.13.1
+   Compiling der v0.7.10
+   Compiling ahash v0.8.12
+   Compiling generic-array v0.14.9
+   Compiling equivalent v1.0.2
+   Compiling hashbrown v0.17.0
+   Compiling base16ct v0.2.0
+   Compiling either v1.15.0
+   Compiling itertools v0.10.5
+   Compiling indexmap v2.14.0
+   Compiling sec1 v0.7.3
+   Compiling group v0.13.0
+   Compiling ark-std v0.4.0
+   Compiling ark-serialize-derive v0.4.2
+   Compiling crypto-bigint v0.5.5
+   Compiling signature v2.2.0
+   Compiling once_cell v1.21.4
+   Compiling libm v0.2.16
+   Compiling base64 v0.13.1
+   Compiling elliptic-curve v0.13.8
+   Compiling wasmparser v0.116.1
+   Compiling ark-ff-macros v0.4.2
+   Compiling derivative v2.2.0
+   Compiling ark-ff-asm v0.4.2
+   Compiling ark-serialize v0.4.2
+   Compiling hmac v0.12.1
+   Compiling rfc6979 v0.4.0
+   Compiling ark-ff v0.4.2
+   Compiling hashbrown v0.13.2
+   Compiling soroban-env-macros v22.1.3
+   Compiling sha2 v0.10.9
+   Compiling curve25519-dalek v4.1.3
+   Compiling num-derive v0.4.2
+   Compiling ethnum v1.5.3
+   Compiling indexmap-nostd v0.4.0
+   Compiling downcast-rs v1.2.1
+   Compiling static_assertions v1.1.0
+   Compiling wasmi_core v0.13.0
+   Compiling wasmparser-nostd v0.100.2
+   Compiling ark-poly v0.4.2
+   Compiling ecdsa v0.16.9
+   Compiling crypto-common v0.1.6
+   Compiling block-buffer v0.10.4
+   Compiling soroban-env-common v22.1.3
+   Compiling curve25519-dalek-derive v0.1.1
+   Compiling wasmi_arena v0.4.1
+   Compiling fnv v1.0.7
+   Compiling smallvec v1.15.1
+   Compiling prettyplease v0.2.37
+   Compiling spin v0.9.8
+   Compiling soroban-wasmi v0.31.1-soroban.20.0.1
+   Compiling darling_core v0.20.11
+   Compiling digest v0.10.7
+   Compiling ark-ec v0.4.2
+   Compiling primeorder v0.13.6
+   Compiling ed25519 v2.2.3
+   Compiling soroban-env-host v22.1.3
+   Compiling keccak v0.1.6
+   Compiling sha3 v0.10.9
+   Compiling darling_macro v0.20.11
+   Compiling ed25519-dalek v2.2.0
+   Compiling p256 v0.13.2
+   Compiling ark-bls12-381 v0.4.0
+   Compiling k256 v0.13.4
+   Compiling soroban-spec v22.0.11
+   Compiling soroban-builtin-sdk-macros v22.1.3
+   Compiling soroban-sdk-macros v22.0.11
+   Compiling hex-literal v0.4.1
+   Compiling darling v0.20.11
+   Compiling soroban-spec-rust v22.0.11
+   Compiling soroban-sdk v22.0.11
+   Compiling bytes-lit v0.0.5
+   Compiling soroban-ledger-snapshot v22.0.11
+   Compiling soromint-lifecycle v0.1.0 (C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\lifecycle)
+   Compiling soromint-lending-pool v0.1.0 
+(C:\Users\HP-PC\OneDrive\Desktop\SoroMint\contracts\lending_pool)
+error[E0252]: the name `AssetConfig` is defined multiple times
+   --> contracts\lending_pool\src\lib.rs:407:17
+    |
+ 42 | use types::{AssetConfig, ConfigKey, DataKey, FlashLiquidateParams};
+    |             ----------- previous import of the type `AssetConfig` here
+...
+407 | pub use types::{AssetConfig, FlashLiquidateParams};
+    |                 ^^^^^^^^^^^--
+    |                 |
+    |                 `AssetConfig` reimported here
+    |                 help: remove unnecessary import
+    |
+    = note: `AssetConfig` must be defined only once in the type namespace of this module
+
+error[E0252]: the name `FlashLiquidateParams` is defined multiple times
+   --> contracts\lending_pool\src\lib.rs:407:30
+    |
+ 42 | use types::{AssetConfig, ConfigKey, DataKey, FlashLiquidateParams};
+    |                                              -------------------- previous import of the type 
+`FlashLiquidateParams` here
+...
+407 | pub use types::{AssetConfig, FlashLiquidateParams};
+    |                              ^^^^^^^^^^^^^^^^^^^^ `FlashLiquidateParams` reimported here
+    |
+    = note: `FlashLiquidateParams` must be defined only once in the type namespace of this module
+
+warning: unused imports: `AssetConfig` and `FlashLiquidateParams`
+   --> contracts\lending_pool\src\lib.rs:407:17
+    |
+407 | pub use types::{AssetConfig, FlashLiquidateParams};
+    |                 ^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+For more information about this error, try `rustc --explain E0252`.
+warning: `soromint-lending-pool` (lib) generated 1 warning
+error: could not compile `soromint-lending-pool` (lib) due to 2 previous errors; 1 warning emitted

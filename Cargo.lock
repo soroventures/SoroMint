@@ -1631,6 +1631,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "soromint-lending-pool"
+version = "0.1.0"
+dependencies = [
+ "flash-loan",
+ "soroban-sdk",
+ "soromint-amm-pool",
+ "soromint-lifecycle",
+ "soromint-oracle",
+ "soromint-token",
+]
+
+[[package]]
 name = "soromint-lifecycle"
 version = "0.1.0"
 dependencies = [

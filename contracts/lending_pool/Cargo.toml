@@ -13,3 +13,7 @@ soromint-lifecycle = { path = "../lifecycle" }
 
 [dev-dependencies]
 soroban-sdk = { version = "22.0.0", features = ["testutils"] }
+soromint-oracle   = { path = "../oracle" }
+soromint-amm-pool = { path = "../amm_pool" }
+flash-loan        = { path = "../flash_loan" }
+soromint-token    = { path = "../token" }
