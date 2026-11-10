@@ -35,7 +35,6 @@ GITHUB_ISSUES_FORMATTED.md
 yarn-debug.log*
 yarn-error.log*
 .idea/
-.vscode/
 *.swp
 *.bak
 Cargo.lock

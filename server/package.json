@@ -4,8 +4,8 @@
   "description": "Backend for SoroMint",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node init && node index.js",
+    "dev": "node init && nodemon index.js",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "lint": "eslint .",
